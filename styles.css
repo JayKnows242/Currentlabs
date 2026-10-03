@@ -1,0 +1,102 @@
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 202px;
+}
+html, body {
+  margin: 0;
+  background: #000810;
+  color: #f8f8f8;
+}
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.75rem 1rem;
+  background: #000810;
+}
+.mark {
+  line-height: 0;
+}
+.mark img {
+  display: block;
+  width: 174px;
+  height: auto;
+  max-width: 100%;
+  max-height: 178px;
+  margin-left: auto;
+  margin-right: auto;
+}
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+nav a {
+  color: #f8f8f8;
+  font: 1rem/1.2 sans-serif;
+  text-decoration: none;
+}
+.column {
+  width: min(720px, 100%);
+  margin-left: auto;
+  margin-right: auto;
+}
+.block {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+.banner {
+  display: block;
+  width: 100%;
+  max-width: 1312px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+.down {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+.native {
+  display: block;
+  height: auto;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.native.eco { width: 705px; }
+.native.plan { width: 682px; }
+.line {
+  margin: 0;
+  text-align: center;
+  font: 1.125rem/1.4 sans-serif;
+}
+.contact {
+  margin: 0;
+  text-align: center;
+  font: 1.125rem/1.5 sans-serif;
+}
+.contact p { margin: 0; }
+.contact a { color: inherit; text-decoration: none; }
+section { margin: 0; }
+@media (max-width: 639px) {
+  html { scroll-padding-top: 240px; }
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+:focus-visible {
+  outline: 2px solid #f8f8f8;
+  outline-offset: 2px;
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
